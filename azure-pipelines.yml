@@ -4,7 +4,13 @@
     ConnectionType: 'AzureRM'
     azureSubscription: '무료 체험 (7bebee7e-7811-4a32-b042-24b87522cd43)'
     appType: 'webApp'
+    WebAppName: '- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: '무료 체험 (7bebee7e-7811-4a32-b042-24b87522cd43)'
+    appType: 'webApp'
     WebAppName: 'yangYeolDuoAppService'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip''
     deployToSlotOrASE: true
     ResourceGroupName: 'yangYeol'
     SlotName: 'production'
