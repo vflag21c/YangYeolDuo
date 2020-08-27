@@ -1,4 +1,14 @@
 # Maven package Java project Web App to Linux on Azure
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: '무료 체험 (7bebee7e-7811-4a32-b042-24b87522cd43)'
+    appType: 'webApp'
+    WebAppName: 'yangYeolDuoAppService'
+    deployToSlotOrASE: true
+    ResourceGroupName: 'yangYeol'
+    SlotName: 'production'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Build your Java project and deploy it to Azure as a Linux web app
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
