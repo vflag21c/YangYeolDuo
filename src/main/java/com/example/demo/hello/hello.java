@@ -9,4 +9,9 @@ public class hello {
     public String hello() {
         return "양태영 바보";
     }
+
+    @GetMapping("/test")
+    public String hello2() {
+        return "양태영 천재";
+    }
 }
